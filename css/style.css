@@ -1288,3 +1288,175 @@ h1, h2, h3, h4 {
   .hero-subtitle { font-size: .9rem; gap: 8px; }
   .route-flag { font-size: 1.1em; }
 }
+
+/* ── LEGAL PAGES ──────────────────────────── */
+.legal-page {
+  padding-top: calc(var(--header-h) + 60px);
+  padding-bottom: 80px;
+  min-height: 70vh;
+}
+.legal-page .container { max-width: 800px; }
+.legal-page h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--gold);
+  margin-bottom: 8px;
+}
+.legal-page .legal-subtitle {
+  color: var(--text-muted);
+  font-size: .95rem;
+  margin-bottom: 40px;
+}
+.legal-page h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-top: 32px;
+  margin-bottom: 12px;
+}
+.legal-page p,
+.legal-page li {
+  color: var(--gray-light);
+  line-height: 1.7;
+  margin-bottom: 10px;
+  font-size: .95rem;
+}
+.legal-page ul { padding-left: 20px; }
+.legal-page a { color: var(--gold); text-decoration: underline; }
+.legal-page a:hover { color: var(--gold-light); }
+.legal-page .todo-marker {
+  background: var(--gold-bg);
+  border: 1px dashed var(--gold-border);
+  border-radius: 6px;
+  padding: 2px 8px;
+  color: var(--gold);
+  font-weight: 600;
+  font-size: .85rem;
+}
+
+/* Legal page nav */
+.legal-nav {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.legal-nav .back-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--gray);
+  font-size: .9rem;
+  text-decoration: none;
+  transition: color var(--transition);
+}
+.legal-nav .back-link:hover { color: var(--gold); }
+
+/* ── FOOTER LEGAL LINKS ──────────────────── */
+.footer-legal-links {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.footer-legal-links a {
+  color: var(--gray);
+  font-size: .82rem;
+  text-decoration: none;
+  transition: color var(--transition);
+}
+.footer-legal-links a:hover { color: var(--gold); }
+.footer-sep { color: var(--text-muted); font-size: .75rem; }
+
+/* ── COOKIE CONSENT BANNER ───────────────── */
+.consent-banner {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background: var(--black-card);
+  border-top: 1px solid var(--gold-border);
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  box-shadow: 0 -4px 20px rgba(0,0,0,.5);
+}
+.consent-text {
+  color: var(--gray-light);
+  font-size: .88rem;
+  line-height: 1.5;
+  max-width: 600px;
+}
+.consent-text a { color: var(--gold); text-decoration: underline; }
+.consent-text a:hover { color: var(--gold-light); }
+.consent-buttons {
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+}
+.consent-btn {
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-size: .88rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: all var(--transition);
+}
+.consent-btn--accept {
+  background: var(--gold);
+  color: var(--black);
+}
+.consent-btn--accept:hover { background: var(--gold-light); }
+.consent-btn--reject {
+  background: transparent;
+  color: var(--gray);
+  border: 1px solid var(--gray);
+}
+.consent-btn--reject:hover { color: var(--white); border-color: var(--white); }
+
+@media (max-width: 640px) {
+  .consent-banner { flex-direction: column; text-align: center; padding: 16px; }
+  .consent-text { font-size: .82rem; }
+  .footer-legal-links { justify-content: center; }
+}
+
+/* ── 404 PAGE ─────────────────────────────── */
+.error-page {
+  padding-top: calc(var(--header-h) + 80px);
+  padding-bottom: 80px;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.error-content h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 6rem;
+  font-weight: 900;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: 16px;
+}
+.error-content h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 12px;
+}
+.error-content p {
+  color: var(--gray);
+  margin-bottom: 32px;
+  font-size: .95rem;
+}
+.error-content .btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}

@@ -23,6 +23,14 @@
   <link rel="alternate" hreflang="de" href="https://vip-transporte.de/?lang=de">
   <link rel="alternate" hreflang="en" href="https://vip-transporte.de/?lang=en">
 
+  <!-- Favicon & Theme -->
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <meta name="theme-color" content="#0a0a0a">
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Performance hints -->
+  <link rel="dns-prefetch" href="https://wa.me">
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -732,10 +740,24 @@
     <div class="footer-bottom">
       <div class="container footer-bottom-inner">
         <span>&copy; 2025 VIP-Transporte. <span data-i18n="footer_rights">Toate drepturile rezervate.</span></span>
+        <span class="footer-legal-links">
+          <a href="impressum.html" data-i18n="nav_impressum">Impressum</a>
+          <span class="footer-sep">|</span>
+          <a href="datenschutz.html" data-i18n="nav_datenschutz">Politica de confidențialitate</a>
+        </span>
         <span data-i18n="footer_legal">Transport autorizat România · Germania · Austria</span>
       </div>
     </div>
   </footer>
+
+  <!-- Cookie Consent Banner -->
+  <div class="consent-banner" id="consent-banner">
+    <p class="consent-text" data-i18n="consent_text">Acest site folosește servicii externe (Google Fonts, Font Awesome) care pot prelucra date personale (adresa IP). De asemenea, stocăm preferința de limbă în browserul dvs. <a href="datenschutz.html" data-i18n="consent_settings">Mai multe detalii</a></p>
+    <div class="consent-buttons">
+      <button class="consent-btn consent-btn--accept" id="consent-accept" data-i18n="consent_accept">Accept</button>
+      <button class="consent-btn consent-btn--reject" id="consent-reject" data-i18n="consent_reject">Refuz</button>
+    </div>
+  </div>
 
   <!-- Scripts -->
   <script src="js/main.js"></script>

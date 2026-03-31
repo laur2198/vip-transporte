@@ -1,0 +1,17 @@
+{
+  "name": "VIP-Transporte",
+  "short_name": "VIP-Transport",
+  "description": "Transport persoane și colete România - Germania - Austria",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#0a0a0a",
+  "background_color": "#0a0a0a",
+  "icons": [
+    {
+      "src": "img/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
