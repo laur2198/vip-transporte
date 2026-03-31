@@ -18,18 +18,35 @@
   <meta property="og:description" content="Transport persoane și colete România ↔ Germania ↔ Austria. Ușă în ușă, prețuri accesibile, șoferi de încredere.">
   <meta property="og:image" content="https://vip-transporte.de/img/og-image.jpg">
 
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="VIP-Transporte | Transport Persoane & Colete România - Germania - Austria">
+  <meta name="twitter:description" content="Transport persoane și colete România ↔ Germania ↔ Austria. Ușă în ușă, prețuri accesibile, șoferi de încredere.">
+  <meta name="twitter:image" content="https://vip-transporte.de/img/og-image.jpg">
+
   <!-- hreflang -->
   <link rel="alternate" hreflang="ro" href="https://vip-transporte.de/">
   <link rel="alternate" hreflang="de" href="https://vip-transporte.de/?lang=de">
   <link rel="alternate" hreflang="en" href="https://vip-transporte.de/?lang=en">
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Favicon & Theme -->
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <meta name="theme-color" content="#0a0a0a">
+  <link rel="manifest" href="manifest.json">
 
-  <!-- Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Performance hints -->
+  <link rel="dns-prefetch" href="https://wa.me">
+
+  <!-- Fonts & Icons: loaded conditionally based on GDPR consent (see main.js) -->
+  <script>
+    // Load external resources only if consent was previously given
+    if (localStorage.getItem('vt-consent') === 'accepted') {
+      var l1 = document.createElement('link'); l1.rel = 'preconnect'; l1.href = 'https://fonts.googleapis.com'; document.head.appendChild(l1);
+      var l2 = document.createElement('link'); l2.rel = 'preconnect'; l2.href = 'https://fonts.gstatic.com'; l2.crossOrigin = ''; document.head.appendChild(l2);
+      var l3 = document.createElement('link'); l3.rel = 'stylesheet'; l3.href = 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap'; document.head.appendChild(l3);
+      var l4 = document.createElement('link'); l4.rel = 'stylesheet'; l4.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css'; document.head.appendChild(l4);
+    }
+  </script>
 
   <!-- Styles -->
   <link rel="stylesheet" href="css/style.css">
@@ -42,13 +59,40 @@
     "name": "VIP-Transporte",
     "telephone": "+491626842062",
     "url": "https://vip-transporte.de",
-    "description": "Transport persoane si colete Romania - Germania - Austria",
-    "areaServed": ["Romania", "Germany", "Austria"],
-    "serviceType": ["Passenger Transport", "Parcel Delivery"]
+    "image": "https://vip-transporte.de/img/og-image.jpg",
+    "description": "Transport persoane si colete Romania - Germania - Austria. Ridicare din usa in usa, preturi accesibile, soferi profesionisti.",
+    "areaServed": [
+      {"@type": "Country", "name": "Romania"},
+      {"@type": "Country", "name": "Germany"},
+      {"@type": "Country", "name": "Austria"}
+    ],
+    "serviceType": ["Passenger Transport", "Parcel Delivery"],
+    "priceRange": "€€",
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "06:00",
+      "closes": "22:00"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+491626842062",
+      "contactType": "customer service",
+      "availableLanguage": ["Romanian", "German", "English"]
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": "3",
+      "bestRating": "5"
+    }
   }
   </script>
 </head>
 <body>
+
+  <!-- Skip to content (accessibility) -->
+  <a href="#hero" class="skip-to-content">Skip to content</a>
 
   <!-- ═══════════════════════════════════════
        FLOATING WHATSAPP BUTTON
@@ -732,10 +776,24 @@
     <div class="footer-bottom">
       <div class="container footer-bottom-inner">
         <span>&copy; 2025 VIP-Transporte. <span data-i18n="footer_rights">Toate drepturile rezervate.</span></span>
+        <span class="footer-legal-links">
+          <a href="impressum.html" data-i18n="nav_impressum">Impressum</a>
+          <span class="footer-sep">|</span>
+          <a href="datenschutz.html" data-i18n="nav_datenschutz">Politica de confidențialitate</a>
+        </span>
         <span data-i18n="footer_legal">Transport autorizat România · Germania · Austria</span>
       </div>
     </div>
   </footer>
+
+  <!-- Cookie Consent Banner -->
+  <div class="consent-banner" id="consent-banner">
+    <p class="consent-text" data-i18n="consent_text">Acest site folosește servicii externe (Google Fonts, Font Awesome) care pot prelucra date personale (adresa IP). De asemenea, stocăm preferința de limbă în browserul dvs. <a href="datenschutz.html" data-i18n="consent_settings">Mai multe detalii</a></p>
+    <div class="consent-buttons">
+      <button class="consent-btn consent-btn--accept" id="consent-accept" data-i18n="consent_accept">Accept</button>
+      <button class="consent-btn consent-btn--reject" id="consent-reject" data-i18n="consent_reject">Refuz</button>
+    </div>
+  </div>
 
   <!-- Scripts -->
   <script src="js/main.js"></script>

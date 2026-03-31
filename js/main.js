@@ -129,6 +129,47 @@ const TRANSLATIONS = {
     footer_contact: 'Contact',
     footer_rights: 'Toate drepturile rezervate.',
     footer_legal: 'Transport autorizat România · Germania · Austria',
+    approx_dist: '~1.350 km',
+    nav_impressum: 'Impressum',
+    nav_datenschutz: 'Politica de confidențialitate',
+    consent_text: 'Acest site folosește servicii externe (Google Fonts, Font Awesome) care pot prelucra date personale (adresa IP). De asemenea, stocăm preferința de limbă în browserul dvs.',
+    consent_accept: 'Accept',
+    consent_reject: 'Refuz',
+    consent_settings: 'Mai multe detalii',
+    imp_title: 'Impressum',
+    imp_info: 'Informații conform § 5 TMG',
+    imp_company: 'Firmă',
+    imp_address: 'Adresă',
+    imp_responsible: 'Persoană responsabilă',
+    imp_contact: 'Contact',
+    imp_phone: 'Telefon',
+    imp_email: 'E-mail',
+    imp_tax: 'Identificare fiscală',
+    imp_tax_desc: 'Număr de identificare TVA conform §27 a UStG',
+    imp_dispute: 'Soluționarea litigiilor',
+    imp_dispute_text: 'Comisia Europeană pune la dispoziție o platformă de soluționare online a litigiilor (OS):',
+    imp_dispute_note: 'Nu suntem obligați și nu suntem dispuși să participăm la o procedură de soluționare a litigiilor în fața unui organism de soluționare a litigiilor de consum.',
+    priv_title: 'Politica de confidențialitate',
+    priv_intro: 'Protecția datelor dumneavoastră personale este importantă pentru noi. Mai jos vă informăm despre prelucrarea datelor cu caracter personal pe site-ul nostru.',
+    priv_responsible_title: 'Persoana responsabilă',
+    priv_responsible_text: 'Persoana responsabilă pentru prelucrarea datelor pe acest site este:',
+    priv_hosting_title: 'Hosting',
+    priv_hosting_text: 'Acest site este un site static. Paginile sunt livrate de serverul de hosting. La accesarea site-ului, serverul înregistrează automat log-uri (fișiere jurnal) ce pot conține: adresa IP, data și ora accesării, pagina accesată, codul de stare HTTP.',
+    priv_fonts_title: 'Google Fonts',
+    priv_fonts_text: 'Acest site folosește fonturi de la Google Fonts, încărcate de pe serverele Google (fonts.googleapis.com, fonts.gstatic.com). La încărcarea unei pagini, browserul dumneavoastră stabilește o conexiune cu serverele Google, iar adresa IP este transmisă. Mai multe informații:',
+    priv_fa_title: 'Font Awesome',
+    priv_fa_text: 'Acest site folosește pictograme de la Font Awesome, încărcate de pe CDN-ul Cloudflare (cdnjs.cloudflare.com). La încărcarea unei pagini, browserul stabilește o conexiune cu serverele Cloudflare, iar adresa IP este transmisă.',
+    priv_wa_title: 'Integrare WhatsApp',
+    priv_wa_text: 'Site-ul nostru conține link-uri și un formular care deschid WhatsApp (wa.me). Când accesați un link WhatsApp, datele sunt transmise către Meta Platforms Ireland Ltd. Aceasta are loc doar după acțiunea dumneavoastră activă (click pe link sau trimitere formular).',
+    priv_storage_title: 'Stocare locală (localStorage)',
+    priv_storage_text: 'Stocăm preferința dumneavoastră de limbă și consimțământul cookie în localStorage-ul browserului. Aceste date rămân doar pe dispozitivul dumneavoastră și nu sunt transmise către noi.',
+    priv_rights_title: 'Drepturile dumneavoastră',
+    priv_rights_text: 'Aveți dreptul la informare, corectare, ștergere, restricționare, portabilitatea datelor și dreptul de a vă opune prelucrării. Dacă considerați că prelucrarea datelor încalcă legislația, puteți depune o plângere la autoritatea de supraveghere.',
+    priv_changes_title: 'Modificări',
+    priv_changes_text: 'Această politică de confidențialitate poate fi actualizată periodic. Vă recomandăm să verificați această pagină regulat.',
+    err404_title: 'Pagina nu a fost găsită',
+    err404_desc: 'Ne pare rău, pagina pe care o căutați nu există sau a fost mutată.',
+    err404_back: 'Înapoi la pagina principală',
   },
 
   de: {
@@ -248,6 +289,47 @@ const TRANSLATIONS = {
     footer_contact: 'Kontakt',
     footer_rights: 'Alle Rechte vorbehalten.',
     footer_legal: 'Zugelassener Transport Rumänien · Deutschland · Österreich',
+    approx_dist: '~1.350 km',
+    nav_impressum: 'Impressum',
+    nav_datenschutz: 'Datenschutz',
+    consent_text: 'Diese Website verwendet externe Dienste (Google Fonts, Font Awesome), die personenbezogene Daten (IP-Adresse) verarbeiten können. Außerdem speichern wir Ihre Spracheinstellung in Ihrem Browser.',
+    consent_accept: 'Akzeptieren',
+    consent_reject: 'Ablehnen',
+    consent_settings: 'Mehr erfahren',
+    imp_title: 'Impressum',
+    imp_info: 'Angaben gemäß § 5 TMG',
+    imp_company: 'Unternehmen',
+    imp_address: 'Adresse',
+    imp_responsible: 'Verantwortliche Person',
+    imp_contact: 'Kontakt',
+    imp_phone: 'Telefon',
+    imp_email: 'E-Mail',
+    imp_tax: 'Steuerliche Angaben',
+    imp_tax_desc: 'Umsatzsteuer-Identifikationsnummer gemäß §27 a UStG',
+    imp_dispute: 'Streitschlichtung',
+    imp_dispute_text: 'Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:',
+    imp_dispute_note: 'Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.',
+    priv_title: 'Datenschutzerklärung',
+    priv_intro: 'Der Schutz Ihrer persönlichen Daten ist uns wichtig. Nachfolgend informieren wir Sie über die Verarbeitung personenbezogener Daten auf unserer Website.',
+    priv_responsible_title: 'Verantwortliche Stelle',
+    priv_responsible_text: 'Verantwortlich für die Datenverarbeitung auf dieser Website ist:',
+    priv_hosting_title: 'Hosting',
+    priv_hosting_text: 'Diese Website ist eine statische Website. Die Seiten werden vom Hosting-Server ausgeliefert. Beim Aufrufen der Website erfasst der Server automatisch Logdateien, die enthalten können: IP-Adresse, Datum und Uhrzeit des Zugriffs, aufgerufene Seite, HTTP-Statuscode.',
+    priv_fonts_title: 'Google Fonts',
+    priv_fonts_text: 'Diese Website nutzt Schriftarten von Google Fonts, die von Google-Servern geladen werden (fonts.googleapis.com, fonts.gstatic.com). Beim Laden einer Seite stellt Ihr Browser eine Verbindung zu Google-Servern her, wobei Ihre IP-Adresse übermittelt wird. Weitere Informationen:',
+    priv_fa_title: 'Font Awesome',
+    priv_fa_text: 'Diese Website nutzt Icons von Font Awesome, die über das Cloudflare-CDN geladen werden (cdnjs.cloudflare.com). Beim Laden einer Seite stellt Ihr Browser eine Verbindung zu Cloudflare-Servern her, wobei Ihre IP-Adresse übermittelt wird.',
+    priv_wa_title: 'WhatsApp-Integration',
+    priv_wa_text: 'Unsere Website enthält Links und ein Formular, die WhatsApp öffnen (wa.me). Wenn Sie einen WhatsApp-Link aufrufen, werden Daten an Meta Platforms Ireland Ltd. übermittelt. Dies geschieht nur nach Ihrer aktiven Handlung (Klick auf Link oder Formularabsendung).',
+    priv_storage_title: 'Lokale Speicherung (localStorage)',
+    priv_storage_text: 'Wir speichern Ihre Spracheinstellung und Cookie-Einwilligung im localStorage Ihres Browsers. Diese Daten verbleiben nur auf Ihrem Gerät und werden nicht an uns übermittelt.',
+    priv_rights_title: 'Ihre Rechte',
+    priv_rights_text: 'Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit und Widerspruch. Wenn Sie der Ansicht sind, dass die Verarbeitung Ihrer Daten gegen das Datenschutzrecht verstößt, können Sie sich bei der Aufsichtsbehörde beschweren.',
+    priv_changes_title: 'Änderungen',
+    priv_changes_text: 'Diese Datenschutzerklärung kann regelmäßig aktualisiert werden. Wir empfehlen Ihnen, diese Seite regelmäßig zu überprüfen.',
+    err404_title: 'Seite nicht gefunden',
+    err404_desc: 'Die gesuchte Seite existiert leider nicht oder wurde verschoben.',
+    err404_back: 'Zurück zur Startseite',
   },
 
   en: {
@@ -367,6 +449,47 @@ const TRANSLATIONS = {
     footer_contact: 'Contact',
     footer_rights: 'All rights reserved.',
     footer_legal: 'Licensed transport Romania · Germany · Austria',
+    approx_dist: '~1,350 km',
+    nav_impressum: 'Legal Notice',
+    nav_datenschutz: 'Privacy Policy',
+    consent_text: 'This website uses external services (Google Fonts, Font Awesome) that may process personal data (IP address). We also store your language preference in your browser.',
+    consent_accept: 'Accept',
+    consent_reject: 'Reject',
+    consent_settings: 'Learn more',
+    imp_title: 'Legal Notice',
+    imp_info: 'Information according to § 5 TMG',
+    imp_company: 'Company',
+    imp_address: 'Address',
+    imp_responsible: 'Responsible person',
+    imp_contact: 'Contact',
+    imp_phone: 'Phone',
+    imp_email: 'Email',
+    imp_tax: 'Tax information',
+    imp_tax_desc: 'VAT identification number according to §27 a UStG',
+    imp_dispute: 'Dispute resolution',
+    imp_dispute_text: 'The European Commission provides a platform for online dispute resolution (OS):',
+    imp_dispute_note: 'We are not willing or obliged to participate in dispute resolution proceedings before a consumer arbitration board.',
+    priv_title: 'Privacy Policy',
+    priv_intro: 'The protection of your personal data is important to us. Below we inform you about the processing of personal data on our website.',
+    priv_responsible_title: 'Responsible party',
+    priv_responsible_text: 'The responsible party for data processing on this website is:',
+    priv_hosting_title: 'Hosting',
+    priv_hosting_text: 'This website is a static website. Pages are delivered by the hosting server. When accessing the website, the server automatically records log files that may contain: IP address, date and time of access, page accessed, HTTP status code.',
+    priv_fonts_title: 'Google Fonts',
+    priv_fonts_text: 'This website uses fonts from Google Fonts, loaded from Google servers (fonts.googleapis.com, fonts.gstatic.com). When loading a page, your browser establishes a connection to Google servers, and your IP address is transmitted. More information:',
+    priv_fa_title: 'Font Awesome',
+    priv_fa_text: 'This website uses icons from Font Awesome, loaded from the Cloudflare CDN (cdnjs.cloudflare.com). When loading a page, your browser establishes a connection to Cloudflare servers, and your IP address is transmitted.',
+    priv_wa_title: 'WhatsApp Integration',
+    priv_wa_text: 'Our website contains links and a form that open WhatsApp (wa.me). When you access a WhatsApp link, data is transmitted to Meta Platforms Ireland Ltd. This only occurs after your active action (clicking a link or submitting a form).',
+    priv_storage_title: 'Local Storage (localStorage)',
+    priv_storage_text: 'We store your language preference and cookie consent in your browser\'s localStorage. This data remains only on your device and is not transmitted to us.',
+    priv_rights_title: 'Your rights',
+    priv_rights_text: 'You have the right to information, correction, deletion, restriction, data portability and objection. If you believe that the processing of your data violates data protection law, you can file a complaint with the supervisory authority.',
+    priv_changes_title: 'Changes',
+    priv_changes_text: 'This privacy policy may be updated periodically. We recommend checking this page regularly.',
+    err404_title: 'Page not found',
+    err404_desc: 'Sorry, the page you are looking for does not exist or has been moved.',
+    err404_back: 'Back to homepage',
   }
 };
 
@@ -475,7 +598,9 @@ function initMobileMenu() {
 function initSmoothScroll() {
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', e => {
-      const target = document.querySelector(a.getAttribute('href'));
+      const href = a.getAttribute('href');
+      if (!href || href === '#') return;
+      const target = document.querySelector(href);
       if (!target) return;
       e.preventDefault();
       const headerH = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--header-h')) || 72;
@@ -616,6 +741,72 @@ function initLangSwitcher() {
   });
 }
 
+/* ── COOKIE CONSENT BANNER ────────────────── */
+function loadExternalResources() {
+  // Load Google Fonts
+  const pc1 = document.createElement('link');
+  pc1.rel = 'preconnect'; pc1.href = 'https://fonts.googleapis.com';
+  document.head.appendChild(pc1);
+  const pc2 = document.createElement('link');
+  pc2.rel = 'preconnect'; pc2.href = 'https://fonts.gstatic.com'; pc2.crossOrigin = '';
+  document.head.appendChild(pc2);
+  const gf = document.createElement('link');
+  gf.rel = 'stylesheet';
+  gf.href = 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap';
+  document.head.appendChild(gf);
+
+  // Load Font Awesome
+  const fa = document.createElement('link');
+  fa.rel = 'stylesheet';
+  fa.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css';
+  document.head.appendChild(fa);
+
+  // Remove fallback class
+  document.documentElement.classList.remove('no-external-fonts');
+}
+
+function initConsentBanner() {
+  const banner = document.getElementById('consent-banner');
+  const consent = localStorage.getItem('vt-consent');
+
+  // If already consented, ensure resources are loaded
+  if (consent === 'accepted') {
+    document.documentElement.classList.remove('no-external-fonts');
+    if (banner) banner.style.display = 'none';
+    return;
+  }
+
+  // If rejected or no decision yet, mark as no-external-fonts
+  if (consent !== 'accepted') {
+    document.documentElement.classList.add('no-external-fonts');
+  }
+
+  if (consent === 'rejected') {
+    if (banner) banner.style.display = 'none';
+    return;
+  }
+
+  // No decision yet — show banner
+  if (banner) banner.style.display = 'flex';
+
+  const acceptBtn = document.getElementById('consent-accept');
+  const rejectBtn = document.getElementById('consent-reject');
+
+  if (acceptBtn) {
+    acceptBtn.addEventListener('click', () => {
+      localStorage.setItem('vt-consent', 'accepted');
+      if (banner) banner.style.display = 'none';
+      loadExternalResources();
+    });
+  }
+  if (rejectBtn) {
+    rejectBtn.addEventListener('click', () => {
+      localStorage.setItem('vt-consent', 'rejected');
+      if (banner) banner.style.display = 'none';
+    });
+  }
+}
+
 /* ── INIT ──────────────────────────────────── */
 document.addEventListener('DOMContentLoaded', () => {
   const lang = detectLang();
@@ -629,4 +820,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initBookingForm();
   initActiveNav();
   initLangSwitcher();
+  initConsentBanner();
 });

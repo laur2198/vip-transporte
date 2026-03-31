@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title data-i18n="priv_title">Politica de confidențialitate — VIP-Transporte</title>
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://vip-transporte.de/datenschutz.html">
+
+  <!-- Favicon & Theme -->
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <meta name="theme-color" content="#0a0a0a">
+
+  <!-- Fonts & Icons: loaded conditionally based on GDPR consent (see main.js) -->
+  <script>
+    if (localStorage.getItem('vt-consent') === 'accepted') {
+      var l1 = document.createElement('link'); l1.rel = 'preconnect'; l1.href = 'https://fonts.googleapis.com'; document.head.appendChild(l1);
+      var l2 = document.createElement('link'); l2.rel = 'preconnect'; l2.href = 'https://fonts.gstatic.com'; l2.crossOrigin = ''; document.head.appendChild(l2);
+      var l3 = document.createElement('link'); l3.rel = 'stylesheet'; l3.href = 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap'; document.head.appendChild(l3);
+      var l4 = document.createElement('link'); l4.rel = 'stylesheet'; l4.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css'; document.head.appendChild(l4);
+    }
+  </script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fas fa-van-shuttle"></i></div>
+        <div class="logo-text">
+          <span class="logo-vip">VIP</span>
+          <span class="logo-transporte">-TRANSPORTE</span>
+        </div>
+      </a>
+
+      <div class="legal-nav">
+        <a href="index.html" class="back-link">
+          <i class="fas fa-arrow-left"></i>
+          <span>Home</span>
+        </a>
+      </div>
+
+      <div class="lang-switcher" role="navigation" aria-label="Language selector">
+        <button class="lang-btn active" data-lang="ro">RO</button>
+        <button class="lang-btn" data-lang="de">DE</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <nav class="mobile-nav" id="mobile-nav" aria-hidden="true">
+      <a href="index.html">Home</a>
+      <a href="index.html#services" data-i18n="nav_services">Servicii</a>
+      <a href="index.html#contact" class="btn-nav-cta" data-i18n="nav_book">Rezervă acum</a>
+    </nav>
+  </header>
+
+  <!-- CONTENT -->
+  <main class="legal-page">
+    <div class="container">
+      <h1 data-i18n="priv_title">Politica de confidențialitate</h1>
+      <p class="legal-subtitle">Ultima actualizare: 31.03.2026</p>
+
+      <p data-i18n="priv_intro">Protecția datelor dumneavoastră personale este importantă pentru noi. Mai jos vă informăm despre prelucrarea datelor cu caracter personal pe site-ul nostru.</p>
+
+      <h2 data-i18n="priv_responsible_title">Persoana responsabilă</h2>
+      <p data-i18n="priv_responsible_text">Persoana responsabilă pentru prelucrarea datelor pe acest site este:</p>
+      <p>
+        <span class="todo-marker">[TODO: Numele firmei]</span><br>
+        <span class="todo-marker">[TODO: Adresa completă]</span><br>
+        Telefon: +49 162 6842062<br>
+        E-mail: <span class="todo-marker">[TODO: adresa de email]</span>
+      </p>
+
+      <h2 data-i18n="priv_hosting_title">Hosting</h2>
+      <p data-i18n="priv_hosting_text">Acest site este un site static. Paginile sunt livrate de serverul de hosting. La accesarea site-ului, serverul înregistrează automat log-uri (fișiere jurnal) ce pot conține: adresa IP, data și ora accesării, pagina accesată, codul de stare HTTP.</p>
+
+      <h2 data-i18n="priv_fonts_title">Google Fonts</h2>
+      <p data-i18n="priv_fonts_text">Acest site folosește fonturi de la Google Fonts, încărcate de pe serverele Google (fonts.googleapis.com, fonts.gstatic.com). La încărcarea unei pagini, browserul dumneavoastră stabilește o conexiune cu serverele Google, iar adresa IP este transmisă. Mai multe informații:</p>
+      <p><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></p>
+
+      <h2 data-i18n="priv_fa_title">Font Awesome</h2>
+      <p data-i18n="priv_fa_text">Acest site folosește pictograme de la Font Awesome, încărcate de pe CDN-ul Cloudflare (cdnjs.cloudflare.com). La încărcarea unei pagini, browserul stabilește o conexiune cu serverele Cloudflare, iar adresa IP este transmisă.</p>
+
+      <h2 data-i18n="priv_wa_title">Integrare WhatsApp</h2>
+      <p data-i18n="priv_wa_text">Site-ul nostru conține link-uri și un formular care deschid WhatsApp (wa.me). Când accesați un link WhatsApp, datele sunt transmise către Meta Platforms Ireland Ltd. Aceasta are loc doar după acțiunea dumneavoastră activă (click pe link sau trimitere formular).</p>
+
+      <h2 data-i18n="priv_storage_title">Stocare locală (localStorage)</h2>
+      <p data-i18n="priv_storage_text">Stocăm preferința dumneavoastră de limbă și consimțământul cookie în localStorage-ul browserului. Aceste date rămân doar pe dispozitivul dumneavoastră și nu sunt transmise către noi.</p>
+
+      <h2 data-i18n="priv_rights_title">Drepturile dumneavoastră</h2>
+      <p data-i18n="priv_rights_text">Aveți dreptul la informare, corectare, ștergere, restricționare, portabilitatea datelor și dreptul de a vă opune prelucrării. Dacă considerați că prelucrarea datelor încalcă legislația, puteți depune o plângere la autoritatea de supraveghere.</p>
+
+      <h2 data-i18n="priv_changes_title">Modificări</h2>
+      <p data-i18n="priv_changes_text">Această politică de confidențialitate poate fi actualizată periodic. Vă recomandăm să verificați această pagină regulat.</p>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <span>&copy; 2025 VIP-Transporte. <span data-i18n="footer_rights">Toate drepturile rezervate.</span></span>
+        <span class="footer-legal-links">
+          <a href="impressum.html" data-i18n="nav_impressum">Impressum</a>
+          <span class="footer-sep">|</span>
+          <a href="datenschutz.html" data-i18n="nav_datenschutz">Politica de confidențialitate</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cookie Consent Banner -->
+  <div class="consent-banner" id="consent-banner">
+    <p class="consent-text" data-i18n="consent_text">Acest site folosește servicii externe (Google Fonts, Font Awesome) care pot prelucra date personale (adresa IP). De asemenea, stocăm preferința de limbă în browserul dvs. <a href="datenschutz.html" data-i18n="consent_settings">Mai multe detalii</a></p>
+    <div class="consent-buttons">
+      <button class="consent-btn consent-btn--accept" id="consent-accept" data-i18n="consent_accept">Accept</button>
+      <button class="consent-btn consent-btn--reject" id="consent-reject" data-i18n="consent_reject">Refuz</button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

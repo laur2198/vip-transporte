@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>404 — VIP-Transporte</title>
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- Favicon & Theme -->
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <meta name="theme-color" content="#0a0a0a">
+
+  <!-- Fonts & Icons: loaded conditionally based on GDPR consent (see main.js) -->
+  <script>
+    if (localStorage.getItem('vt-consent') === 'accepted') {
+      var l1 = document.createElement('link'); l1.rel = 'preconnect'; l1.href = 'https://fonts.googleapis.com'; document.head.appendChild(l1);
+      var l2 = document.createElement('link'); l2.rel = 'preconnect'; l2.href = 'https://fonts.gstatic.com'; l2.crossOrigin = ''; document.head.appendChild(l2);
+      var l3 = document.createElement('link'); l3.rel = 'stylesheet'; l3.href = 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap'; document.head.appendChild(l3);
+      var l4 = document.createElement('link'); l4.rel = 'stylesheet'; l4.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css'; document.head.appendChild(l4);
+    }
+  </script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fas fa-van-shuttle"></i></div>
+        <div class="logo-text">
+          <span class="logo-vip">VIP</span>
+          <span class="logo-transporte">-TRANSPORTE</span>
+        </div>
+      </a>
+
+      <div class="lang-switcher" role="navigation" aria-label="Language selector">
+        <button class="lang-btn active" data-lang="ro">RO</button>
+        <button class="lang-btn" data-lang="de">DE</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 404 CONTENT -->
+  <main class="error-page">
+    <div class="error-content">
+      <h1>404</h1>
+      <h2 data-i18n="err404_title">Pagina nu a fost găsită</h2>
+      <p data-i18n="err404_desc">Ne pare rău, pagina pe care o căutați nu există sau a fost mutată.</p>
+      <a href="index.html" class="btn-primary btn-large" data-i18n="err404_back">
+        <i class="fas fa-arrow-left"></i> Înapoi la pagina principală
+      </a>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
