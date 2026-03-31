@@ -598,7 +598,9 @@ function initMobileMenu() {
 function initSmoothScroll() {
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', e => {
-      const target = document.querySelector(a.getAttribute('href'));
+      const href = a.getAttribute('href');
+      if (!href || href === '#') return;
+      const target = document.querySelector(href);
       if (!target) return;
       e.preventDefault();
       const headerH = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--header-h')) || 72;
@@ -740,17 +742,52 @@ function initLangSwitcher() {
 }
 
 /* ── COOKIE CONSENT BANNER ────────────────── */
+function loadExternalResources() {
+  // Load Google Fonts
+  const pc1 = document.createElement('link');
+  pc1.rel = 'preconnect'; pc1.href = 'https://fonts.googleapis.com';
+  document.head.appendChild(pc1);
+  const pc2 = document.createElement('link');
+  pc2.rel = 'preconnect'; pc2.href = 'https://fonts.gstatic.com'; pc2.crossOrigin = '';
+  document.head.appendChild(pc2);
+  const gf = document.createElement('link');
+  gf.rel = 'stylesheet';
+  gf.href = 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap';
+  document.head.appendChild(gf);
+
+  // Load Font Awesome
+  const fa = document.createElement('link');
+  fa.rel = 'stylesheet';
+  fa.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css';
+  document.head.appendChild(fa);
+
+  // Remove fallback class
+  document.documentElement.classList.remove('no-external-fonts');
+}
+
 function initConsentBanner() {
   const banner = document.getElementById('consent-banner');
-  if (!banner) return;
-
   const consent = localStorage.getItem('vt-consent');
-  if (consent) {
-    banner.style.display = 'none';
+
+  // If already consented, ensure resources are loaded
+  if (consent === 'accepted') {
+    document.documentElement.classList.remove('no-external-fonts');
+    if (banner) banner.style.display = 'none';
     return;
   }
 
-  banner.style.display = 'flex';
+  // If rejected or no decision yet, mark as no-external-fonts
+  if (consent !== 'accepted') {
+    document.documentElement.classList.add('no-external-fonts');
+  }
+
+  if (consent === 'rejected') {
+    if (banner) banner.style.display = 'none';
+    return;
+  }
+
+  // No decision yet — show banner
+  if (banner) banner.style.display = 'flex';
 
   const acceptBtn = document.getElementById('consent-accept');
   const rejectBtn = document.getElementById('consent-reject');
@@ -758,13 +795,14 @@ function initConsentBanner() {
   if (acceptBtn) {
     acceptBtn.addEventListener('click', () => {
       localStorage.setItem('vt-consent', 'accepted');
-      banner.style.display = 'none';
+      if (banner) banner.style.display = 'none';
+      loadExternalResources();
     });
   }
   if (rejectBtn) {
     rejectBtn.addEventListener('click', () => {
       localStorage.setItem('vt-consent', 'rejected');
-      banner.style.display = 'none';
+      if (banner) banner.style.display = 'none';
     });
   }
 }
